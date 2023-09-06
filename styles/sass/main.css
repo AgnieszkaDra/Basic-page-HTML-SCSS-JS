@@ -439,4 +439,56 @@ header .header__button {
   flex-basis: 50%;
 }
 
+section.testimonials {
+  padding: 0;
+}
+
+.testimonials {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../../../images/banner/testmonial.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__container {
+  background-color: rgba(36, 148, 248, 0.5);
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(246, 252, 254);
+  text-align: center;
+  flex-basis: 60%;
+}
+
+.testimonials__headline {
+  padding: 20px 0 20px;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.testimonials__grades {
+  display: flex;
+  padding: 10px;
+}
+
+.testimonials__grades .fa.fa-star {
+  color: yellow;
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */
