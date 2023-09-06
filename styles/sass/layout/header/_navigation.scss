@@ -1,3 +1,5 @@
+@import '../../abstracts/';
+
 .navigation {
 
   width: 100%;
@@ -12,13 +14,13 @@
 
   &__button {
     background-color: $color-white;
-    padding: 2rem;
+    padding: 2em;
     height: 45px;
     width: 45px;
     position: relative;
     border-radius: 50%;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    box-shadow: 0 1em 3em rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
 
@@ -40,7 +42,7 @@
     opacity: 1;
     position: absolute;
     left: 0;
-    background-color: $color-turcoise;
+    background-color: $color-dark-blue;
     top: 0px;
   }
 
@@ -84,12 +86,12 @@
 
       &:link,
       &:visited {
-        font-size: 2rem;
+        font-size: 2em;
         font-weight: 300;
-        padding: 1rem 2rem;
+        padding: 1em 2em;
         color: $color-white;
         text-transform: uppercase;
-        background: linear-gradient(213deg, transparent 0%, transparent 35%, $color-medium-blue 100%);
+        background: linear-gradient(213deg, transparent 0%, transparent 35%, $color-turcoise 100%);
         transition: all 0.4s;
       }
 
