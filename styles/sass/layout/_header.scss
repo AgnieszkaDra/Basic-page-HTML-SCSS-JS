@@ -1,0 +1,111 @@
+header {
+  height: 85vh;
+  background-color: $color-dark-blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .header {
+    height: 15%;
+    width: 100%;
+    background-color: $color-black;
+    display: flex;
+    justify-content: space-between;
+
+
+    @include respond(tablet) {
+      width: 850px;
+      background-color: $color-dark-blue;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    @include respond(desktop) {
+      width: 1150px;
+      background-color: $color-dark-blue;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    &__logo {
+      flex-basis: 50%;
+
+      @include flexAbsoluteCenter;
+
+
+      @include respond(tablet) {
+        flex-basis: 30%;
+        justify-content: flex-start;
+        padding: 20px;
+      }
+    }
+
+    &__navigation {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 3.5%;
+
+      .navigation__nav {
+        opacity:0;
+        
+        // left: -100%;
+        // position: fixed;
+
+        @include respond(tablet) {
+          opacity: 1;
+          @include flexAbsoluteCenter;
+        }
+      }
+
+      @include respond(tablet) {
+        @include flexAbsoluteCenter;
+      }
+    }
+
+    &__button {
+      display: none;
+
+      @include respond(tablet) {
+        display: block;
+        @include flexAbsoluteCenter;
+        flex-basis: 15%;
+
+        button {
+          width: 70%;
+          height: 50px;
+          background-color: $color-light-blue;
+          color: $color-white;
+          border: none;
+          border-radius: 5px;
+          padding: 15px;
+        }
+      }
+    }
+  }
+
+  .hero {
+    border: 5px solid orange;
+    height: 85%;
+    width: 100%;
+
+    @include respond(tablet) {
+      width: 850px;
+      background-color: $color-dark-blue;
+
+    }
+
+    @include respond(desktop) {
+      width: 1150px;
+      background-color: $color-dark-blue;
+    }
+}
+
+
+
+
+
+
+}

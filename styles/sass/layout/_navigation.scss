@@ -1,0 +1,135 @@
+.navigation {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: $color-white;
+    padding: 2rem;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    text-align: center;
+    cursor: pointer;
+
+    @include respond(tablet) {
+      display: none;
+    }
+
+  }
+
+  &__background {
+    display: none;
+  }
+
+  &__checkbox:checked~&__nav {
+    @include flexAbsoluteCenter;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    background-color: $color-turcoise;
+    top: 0px;
+  }
+
+  &__checkbox:checked {
+    z-index: 1000;
+  }
+
+  @include respond(tablet) {
+    display: none;
+  }
+
+  &__nav {
+    width: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+
+    @include respond(tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    padding: 5px 0;
+    margin: 1rem;
+
+    @include respond(tablet) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-light-grey;
+
+    @include respond(max-tablet) {
+
+      &:link,
+      &:visited {
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: $color-white;
+        text-transform: uppercase;
+        background: linear-gradient(213deg, transparent 0%, transparent 35%, $color-medium-blue 100%);
+        transition: all 0.4s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-turcoise;
+        font-weight: 700;
+        background-color: $color-white;
+      }
+    }
+
+  }
+
+  &__icon {
+    position: absolute;
+    @include absCenter;
+    
+    &,
+    &::before,
+    &::after {
+      width: 30px;
+      height: 2px;
+      background-color: $color-dark-grey;
+      display: inline-block;
+    }
+
+    &::before {
+      top: -10px;
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::after {
+      top: 10px;
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+  }
+}
