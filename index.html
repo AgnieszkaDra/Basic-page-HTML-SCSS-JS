@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a9181d5dd8.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> -->
 </head>
 
 <body>
@@ -106,7 +108,9 @@
         class="testimonials"
     >
         <div class="testimonials__container">
-            <div class="testimonials__text col xs-12 md-6">
+            <div class="swiper mySwiper">
+                <div class="swiper-wraper">
+                   <div class="testimonials__text col xs-12 md-6">
                 <h2 class="testimonials__headline">Review from our</br> regular users</h2>
                 <p class="testimonials__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam beatae, veniam sint architecto
                     sunt
@@ -123,10 +127,15 @@
                     <p class="testimonials__author">Robert Smile</p>
                 </div>
                 
+            </div>   
+                </div>
+               
             </div>
+           
         </div>
         </section>
     </main>
+    <script src="./src/index.js" type="module"></script>
 </body>
 
 </html>
