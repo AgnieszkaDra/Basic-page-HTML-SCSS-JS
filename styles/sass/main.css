@@ -2,6 +2,21 @@ html, body {
   font-family: "Poppins", sans-serif;
 }
 
+button {
+  max-width: 200px;
+  height: 50px;
+  color: rgb(246, 252, 254);
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 1em;
+}
+
+section {
+  margin-bottom: 1rem;
+  padding: 0 30px 0 30px;
+}
+
 header {
   background-image: url("../../../../images/banner/banner.png");
   background-position: center;
@@ -94,13 +109,7 @@ header .header__button {
     flex-basis: 15%;
   }
   header .header__button button {
-    width: 70%;
-    height: 50px;
     background-color: rgb(83, 172, 254);
-    color: rgb(246, 252, 254);
-    border: none;
-    border-radius: 5px;
-    padding: 15px;
   }
 }
 @media only screen and (max-width: 899px) {
@@ -336,7 +345,6 @@ header .header__button {
 .features {
   display: flex;
   flex-direction: column;
-  padding: 0 30px 0 30px;
 }
 
 .features__headline {
@@ -386,7 +394,7 @@ header .header__button {
 }
 
 .features__photo.green {
-  background: linear-gradient(to right, rgb(54, 239, 141), rgb(54, 239, 141));
+  background: linear-gradient(to right, rgb(54, 239, 141), rgb(98, 241, 165));
 }
 
 .features__description {
@@ -394,6 +402,41 @@ header .header__button {
   padding: 20px;
   font-size: 1.2em;
   text-align: center;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 900px) {
+  .about {
+    flex-direction: row;
+  }
+}
+.about__text {
+  flex-basis: 50%;
+}
+
+.about__headline {
+  font-size: 2em;
+  line-height: 1.5em;
+  padding: 20px 0;
+}
+
+.about__description {
+  padding: 20px 0;
+  font-weight: 200;
+}
+
+.about__button {
+  background-color: rgb(54, 239, 141);
+}
+
+.about__image {
+  flex-basis: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
