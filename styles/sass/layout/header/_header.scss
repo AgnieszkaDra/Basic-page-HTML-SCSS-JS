@@ -1,9 +1,7 @@
 @import '../../abstracts/';
 
 header {
-
-  background-image: url('../../../../images/banner/banner.png');
-
+  background-image: url('/images/banner/banner.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,70 +10,45 @@ header {
   flex-direction: column;
   position: relative;
 
+  @include respond(max-tablet) {
+    background-image: none;
+  }
 
-  .header {
-   
+  .header__container {
     display: flex;
     justify-content: space-between;
-
-
-    @include respond(max-tablet) { 
-      height: 15vh;
-      width: 100%;
-      justify-content: space-around;
-       background-color: $color-black;
-    }
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background-color: $color-black;
 
     @include respond(tablet) {
       width: 850px;
       justify-content: space-between;
       flex-direction: row;
+      background-color: transparent;
     }
 
     @include respond(desktop) {
       width: 1250px;
-      justify-content: space-between;
-      flex-direction: row;
     }
 
-    &__logo {
-      flex-basis: 50%;
-
+    .header__logo {
+      flex-basis: 30%;
       @include flexAbsoluteCenter;
 
       @include respond(tablet) {
-        flex-basis: 30%;
         justify-content: flex-start;
-        padding: 20px;
+        padding-left: 20px;
       }
     }
 
-    &__navigation {
-      flex-basis: 50%;
-      display: flex;
-  
-      justify-content: center;
-      align-items: center;
-      padding: 3.5%;
-
-      .navigation__nav {
-        opacity:0;
-        
-        // left: -100%;
-        // position: fixed;
-
-        @include respond(tablet) {
-          opacity: 1;
-          @include flexAbsoluteCenter;
-        }
-      }
-
-      @include respond(tablet) {
-        @include flexAbsoluteCenter;
-      }
+    .header__navigation {
+      flex-basis: 30%;
+      @include flexAbsoluteCenter;
     }
 
-    &__button {
+    .header__button {
       display: none;
 
       @include respond(tablet) {
@@ -84,31 +57,35 @@ header {
         flex-basis: 15%;
 
         button {
-          
           background-color: $color-light-blue;
-        
         }
       }
     }
+}
 
-   
-  }
+  // .header__container.container {
+  //   padding: 0;
+  //   @include respond(tablet) {
+
+  //   }
+  // }
 
   .hero {
 
     // height: 100%;
     // width: 100%;
-    @include respond(max-tablet) { 
+    @include respond(max-tablet) {
       width: 100%;
-  background-image: url('../../../../images/banner/banner.png');
+      background-image: url('../../../../images/banner/banner.png');
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-     }
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
     @include respond(tablet) {
       width: 850px;
-     
+
 
     }
 
@@ -116,13 +93,6 @@ header {
       width: 1150px;
 
     }
-}
-
-
- @include respond(max-tablet) { 
-     background-image: none;
-    }
-
-
+  }
 
 }
