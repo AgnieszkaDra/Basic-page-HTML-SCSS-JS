@@ -124,6 +124,13 @@ header .header__container .header__button {
   grid-template-areas: ". text ." ". image .";
 }
 
+@media only screen and (min-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: " text image";
+  }
+}
 .hero__text {
   grid-area: text;
   padding-top: 20px;
@@ -157,7 +164,7 @@ header .header__container .header__button {
 }
 .hero__description {
   padding-bottom: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -176,20 +183,9 @@ header .header__container .header__button {
 }
 
 .hero__image img {
-  height: 60%;
+  height: 105%;
 }
 
-@media only screen and (min-width: 900px) {
-  .hero__image img {
-    height: 80%;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-}
 .navigation {
   width: 100%;
   height: 100%;

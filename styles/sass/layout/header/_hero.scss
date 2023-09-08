@@ -8,6 +8,11 @@
  grid-template-areas: 
                     '. text .'
                     '. image .';
+@include respond(tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr;
+    grid-template-areas:' text image';
+}
 
     &__text {
         grid-area: text;
@@ -36,7 +41,7 @@
 
     &__description {
         padding-bottom: 20px;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
         @include respond(tablet) {
             text-align: start;
           }
@@ -51,17 +56,9 @@
     &__image {
         grid-area: image;
         img {
-            height: 60%;
-            @include respond(tablet) {
-                height: 80%;
-            }
+            height: 105%;
         }
     }
-
-    @include respond(tablet) {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:  1fr;
-      }
 }
 
 
