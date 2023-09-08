@@ -4,7 +4,6 @@
     @include flexAbsoluteCenter;
     flex-direction: column;
   
-
     @include respond(tablet) {
         flex-direction: row;
       }
@@ -19,25 +18,16 @@
         padding: 20px 0;
       }
 
-      
       &__description {
         padding: 20px 0;
         font-weight: 200;        
       }
 
       &__button {
-      
- 
         background-color: $color-medium-green;
-
-                
       }
 
-
-    &__image {
+      &__image {
         flex-basis: 50%;
-      
-    }
-
-
+      }
 }

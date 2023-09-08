@@ -9,6 +9,7 @@ header {
   align-items: center;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 
   @include respond(max-tablet) {
     background-image: none;
@@ -18,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     background-color: $color-black;
 
@@ -38,23 +39,26 @@ header {
       @include flexAbsoluteCenter;
 
       @include respond(tablet) {
+        flex-basis: 25%;
         justify-content: flex-start;
-        padding-left: 20px;
+        padding-left: 50px;
       }
     }
 
     .header__navigation {
       flex-basis: 30%;
       @include flexAbsoluteCenter;
+      @include respond(tablet) {
+        flex-basis: 50%;
+      }
     }
 
     .header__button {
       display: none;
-
       @include respond(tablet) {
         display: block;
         @include flexAbsoluteCenter;
-        flex-basis: 15%;
+        flex-basis: 25%;
 
         button {
           background-color: $color-light-blue;
