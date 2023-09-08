@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a9181d5dd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </head>
-
 <body>
     <header id="header">
         <div class="header__container">
@@ -92,17 +93,63 @@
                 <img src="./images/draw.png" />
             </div>
         </section>
-        <section id="testimonials" class="testimonials">
+        <section id="testimonials" class="testimonials container">
             <div class="testimonials__container">
                 <div class="swiper mySwiper">
-                    <div class="swiper-wraper">
-                        <div class="testimonials__text">
+                    <div class="swiper-wrapper">
+                        <div class="testimonials__text swiper-slide">
                             <h2 class="testimonials__headline">Review from our</br> regular users</h2>
                             <p class="testimonials__description">Lorem ipsum, dolor sit amet consectetur adipisicing
-                                elit. Laboriosam beatae, veniam sint architecto
+                                elit.
+                                Laboriosam beatae, veniam sint architecto
                                 sunt
                                 numquam quo ab, tempora necessitatibus placeat aliquam unde harum rem? Quas excepturi
-                                eaque labore
+                                eaque
+                                labore
+                                maiores
+                                fugiat?</p>
+                            <div class="testimonials__grades">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="testimonials__span">-</span>
+                                <p class="testimonials__author">Robert Smile</p>
+                            </div>
+
+                        </div>
+                        <div class="testimonials__text swiper-slide">
+                            <h2 class="testimonials__headline">Review from our</br> regular users</h2>
+                            <p class="testimonials__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit.
+                                Laboriosam beatae, veniam sint architecto
+                                sunt
+                                numquam quo ab, tempora necessitatibus placeat aliquam unde harum rem? Quas excepturi
+                                eaque
+                                labore
+                                maiores
+                                fugiat?</p>
+                            <div class="testimonials__grades">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="testimonials__span">-</span>
+                                <p class="testimonials__author">Robert Smile</p>
+                            </div>
+
+                        </div>
+                        <div class="testimonials__text swiper-slide">
+                            <h2 class="testimonials__headline">Review from our</br> regular users</h2>
+                            <p class="testimonials__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit.
+                                Laboriosam beatae, veniam sint architecto
+                                sunt
+                                numquam quo ab, tempora necessitatibus placeat aliquam unde harum rem? Quas excepturi
+                                eaque
+                                labore
                                 maiores
                                 fugiat?</p>
                             <div class="testimonials__grades">
@@ -117,13 +164,73 @@
 
                         </div>
                     </div>
-
+                    <div class="swiper-pagination"></div>
                 </div>
-
+            </div>
+        </section>
+        <section id="advertisement" class="advertisement container">
+            <div class="advertisement__header">
+                <h2 class="advertisement__header__headline">Unlock full Power</h2>
+                <p class="advertisement__header__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero, molestiae
+                    debitis dicta, omnis quod
+                    saepe,
+                    esse corporis molestias numquam aperiam consequuntur quibusdam? Provident quasi pariatur obcaecati
+                    eos,
+                    iure
+                    dignissimos minima!</p>
+            </div>
+            <div class="advertisement__container">
+                <div class="advertisement__box">
+                    <div class="advertisement__box__header blue">
+                        <h5 class="advertisement__box-subitem">Basic</h5>
+                        <h5 class="advertisement__box-subitem blue">$06</h5>
+                    </div>
+                    <ul class="advertisement__box__list">
+                        <li class="advertisement__box-subitem">One User</li>
+                        <li class="advertisement__box-subitem">100 ui elements</li>
+                        <li class="advertisement__box-subitem">Webmail Support</li>
+                        <li class="advertisement__box-subitem">100GB Cloud Storage</li>
+                    </ul>
+                    <div class="advertisement__box__button">
+                        <button class="">Get Now</button>
+                    </div>
+                </div>
+                <div class="advertisement__box">
+                    <div class="advertisement__box__header orange">
+                        <h5 class="advertisement__box-subitem">Team</h5>
+                        <h5 class="advertisement__box-subitem orange">$06</h5>
+                    </div>
+                    <ul class="advertisement__box__list">
+                        <h4 class="advertisement__box-subitem">One User</h4>
+                        <h4 class="advertisement__box-subitem">100 ui elements</h4>
+                        <h4 class="advertisement__box-subitem">Webmail Support></h4>
+                        <h4 class="advertisement__box-subitem">100GB Cloud Storage</h4>
+                        <h4 class="advertisement__box-subitem">Unlimited Users Limit</h4>
+                    </ul>
+                    <div class="advertisement__box__button">
+                        <button>Get Now</button>
+                    </div>
+                </div>
+                <div class="advertisement__box">
+                    <div class="advertisement__box__header green">
+                        <h5 class="advertisement__box-subitem">Business</h5>
+                        <h5 class="advertisement__box-subitem green">$06</h5>
+                    </div>
+                    <ul class="advertisement__box__list">
+                        <h4 class="advertisement__box-subitem">One User</h4>
+                        <h4 class="advertisement__box-subitem">100 ui elements</h4>
+                        <h4 class="advertisement__box-subitem">Webmail Support</h4>
+                        <h4 class="advertisement__box-subitem">100GB Cloud Storage</h4>
+                    </ul>
+                    <div class="advertisement__box__button">
+                        <button>Get Now</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <script src="./src/index.js" type="module"></script>
+    <script type="module" src="./src/index.js"></script>
 </body>
 
 </html>
