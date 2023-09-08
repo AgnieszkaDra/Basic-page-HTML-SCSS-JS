@@ -289,7 +289,7 @@ header .header__container .header__button {
 }
 .navigation__link {
   text-decoration: none;
-  color: rgb(170, 174, 174);
+  color: rgb(246, 252, 254);
   padding: 10px;
 }
 
@@ -659,6 +659,43 @@ span.swiper-pagination-bullet {
   .advertisement__box:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 5px 5px rgb(170, 174, 174);
+  }
+}
+.adverb {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  background-color: rgb(11, 134, 246);
+  color: rgb(246, 252, 254);
+  height: 50vh;
+}
+
+@media only screen and (min-width: 900px) {
+  .adverb {
+    height: 15vh;
+    padding-top: 0;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.adverb__headline {
+  margin-bottom: 1rem;
+  color: rgb(246, 252, 254);
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+.adverb__images {
+  display: flex;
+  align-self: start;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 900px) {
+  .adverb__images {
+    flex-direction: row;
+    align-self: center;
   }
 }
 
