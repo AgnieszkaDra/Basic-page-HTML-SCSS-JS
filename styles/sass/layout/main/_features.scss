@@ -28,14 +28,18 @@
         padding: 30px;
         @include flexAbsoluteCenter;
         flex-direction: column;
+        @include respond(max-tablet) {
+            padding: 0;
+            margin-bottom: 2rem;
+        }
     }
 
-    &__image {
+    &__icon {
         height: 100px;
         width: 100px;
-        border-radius: 5px;
-        padding: 20px;
-
+        border-radius: 10px;
+        @include flexAbsoluteCenter;
+        
         &.blue {
             background: linear-gradient(to right, $color-dark-blue, $color-medium-blue, $color-light-blue)
         }
@@ -54,5 +58,8 @@
         padding: 20px;
         font-size: 1.2em;
         text-align: center;
+        @include respond(max-tablet) {
+            margin-top: 0;
+          }
     }
 }

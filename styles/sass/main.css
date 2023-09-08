@@ -3,7 +3,7 @@ html, body {
 }
 
 .container {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   padding: 0 30px 0 30px;
 }
 
@@ -26,6 +26,8 @@ header {
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 899px) {
@@ -45,6 +47,7 @@ header .header__container {
 @media only screen and (min-width: 900px) {
   header .header__container {
     width: 850px;
+    height: 15vh;
     justify-content: space-between;
     flex-direction: row;
     background-color: transparent;
@@ -371,22 +374,30 @@ header .header__container .header__button {
   flex-direction: column;
 }
 
-.features__image {
+@media only screen and (max-width: 899px) {
+  .features__element {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+}
+.features__icon {
   height: 100px;
   width: 100px;
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.features__image.blue {
+.features__icon.blue {
   background: linear-gradient(to right, rgb(11, 134, 246), rgb(107, 183, 253), rgb(83, 172, 254));
 }
 
-.features__image.orange {
+.features__icon.orange {
   background: linear-gradient(to right, rgb(254, 147, 93), rgb(253, 169, 92));
 }
 
-.features__image.green {
+.features__icon.green {
   background: linear-gradient(to right, rgb(54, 239, 141), rgb(98, 241, 165));
 }
 
@@ -397,6 +408,11 @@ header .header__container .header__button {
   text-align: center;
 }
 
+@media only screen and (max-width: 899px) {
+  .features__description {
+    margin-top: 0;
+  }
+}
 .about {
   display: flex;
   justify-content: center;

@@ -10,6 +10,8 @@ header {
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 5rem;
 
   @include respond(max-tablet) {
     background-image: none;
@@ -25,6 +27,7 @@ header {
 
     @include respond(tablet) {
       width: 850px;
+      height: 15vh;
       justify-content: space-between;
       flex-direction: row;
       background-color: transparent;
