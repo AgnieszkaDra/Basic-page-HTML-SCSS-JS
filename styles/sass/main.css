@@ -133,19 +133,25 @@ header .header__container .header__button {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .hero__text > * {
-    margin-bottom: 1em;
-  }
 }
 .hero__headline {
-  padding: 20px 0 20px;
+  padding: 20px 0 20px 0;
   font-size: 2em;
   line-height: 1.5em;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 900px) {
+  .hero__headline {
+    padding: 20px 0 0 0;
+    margin-top: 3rem;
+    margin-bottom: 0.5em;
+  }
+}
 .hero__description {
   padding-bottom: 20px;
+  margin-bottom: 4rem;
 }
 
 @media only screen and (min-width: 900px) {
