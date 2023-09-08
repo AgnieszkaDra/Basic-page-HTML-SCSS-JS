@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
 
-
     &__headline {
         padding: 20px 0;
         font-size: 2em;
@@ -14,7 +13,7 @@
     }
 
     &__container {
-        padding-top:  2rem;
+        padding-top: 20px;
         @include flexAbsoluteCenter;
         flex-direction: column;
 
@@ -22,8 +21,7 @@
             padding: 0 80px;
             justify-content: space-around;
             flex-direction: row;
-          }
-      
+        }
     }
 
     &__element {
@@ -32,25 +30,23 @@
         flex-direction: column;
     }
 
-    &__photo {
-    
-            height: 100px;
-            width: 100px;
-            border-radius: 5px;
-            padding: 20px;
-           &.blue {
+    &__image {
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        padding: 20px;
+
+        &.blue {
             background: linear-gradient(to right, $color-dark-blue, $color-medium-blue, $color-light-blue)
-           }
-        &.orange {
-           
-                background: linear-gradient(to right, $color-dark-orange, $color-light-orange)
-               
         }
+
+        &.orange {
+            background: linear-gradient(to right, $color-dark-orange, $color-light-orange)
+        }
+
         &.green {
             background: linear-gradient(to right, $color-medium-green, $color-light-green)
         }
-
-        
     }
 
     &__description {

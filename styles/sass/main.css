@@ -346,7 +346,7 @@ header .header__container .header__button {
 }
 
 .features__container {
-  padding-top: 2rem;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,22 +368,22 @@ header .header__container .header__button {
   flex-direction: column;
 }
 
-.features__photo {
+.features__image {
   height: 100px;
   width: 100px;
   border-radius: 5px;
   padding: 20px;
 }
 
-.features__photo.blue {
+.features__image.blue {
   background: linear-gradient(to right, rgb(11, 134, 246), rgb(107, 183, 253), rgb(83, 172, 254));
 }
 
-.features__photo.orange {
+.features__image.orange {
   background: linear-gradient(to right, rgb(254, 147, 93), rgb(253, 169, 92));
 }
 
-.features__photo.green {
+.features__image.green {
   background: linear-gradient(to right, rgb(54, 239, 141), rgb(98, 241, 165));
 }
 
