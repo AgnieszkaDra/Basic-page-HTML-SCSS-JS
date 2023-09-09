@@ -666,15 +666,15 @@ span.swiper-pagination-bullet {
   align-items: center;
   flex-direction: column;
   padding-top: 50px;
-  background-color: rgb(11, 134, 246);
+  background-color: rgb(83, 172, 254);
   color: rgb(246, 252, 254);
   height: 50vh;
 }
 
 @media only screen and (min-width: 900px) {
   .adverb {
-    height: 15vh;
-    padding-top: 0;
+    padding: 50px;
+    height: 30vh;
     justify-content: space-between;
     flex-direction: row;
   }
@@ -778,6 +778,19 @@ span.swiper-pagination-bullet {
 .contacts__sublist {
   color: rgb(170, 174, 174);
   font-size: 0.8rem;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+}
+
+.footer__span {
+  color: rgb(11, 134, 246);
 }
 
 /*# sourceMappingURL=main.css.map */
