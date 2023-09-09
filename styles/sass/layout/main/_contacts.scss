@@ -1,0 +1,63 @@
+@import '../../abstracts/';
+
+.contacts {
+    background-color: $color-black;
+    opacity: 0.8;
+    color: $color-white;
+    height: 800px;
+    @include respond(tablet) {
+        height: 300px;
+    }
+    &__list {
+        height: 100%;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-direction: column;
+        @include respond(tablet) {
+            flex-direction: row;
+            padding: 50px;
+        }
+    }
+    &__element {
+        padding: 20px;
+        @include respond(tablet){
+            flex-basis: 20%
+        }
+    }
+    &__headline {
+        text-align: left;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    &__headline.logo {
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+    &__description {
+        margin-bottom: 15px;
+        color: $color-light-grey;
+        font-size: 0.8rem;
+    }
+    &__fonts {
+        display: flex;
+        .font{
+            margin: 10px 10px 10px 0;
+            @include flexAbsoluteCenter;
+            background-color: $color-light-grey;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            a {
+               color: $color-white;
+                text-decoration: none;
+            }
+        }
+    }
+    &__sublist {
+        color: $color-light-grey;
+        font-size: 0.8rem;
+    }
+}
+
