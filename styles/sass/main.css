@@ -601,16 +601,11 @@ header .header__container .header__button {
   padding-bottom: 20px;
 }
 
-.advertisement__container {
-  padding: 100px;
-}
-
 @media only screen and (min-width: 900px) {
   .advertisement__container {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 0;
   }
 }
 .advertisement__box {
@@ -686,6 +681,33 @@ header .header__container .header__button {
   .advertisement__box:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 5px 5px rgb(170, 174, 174);
+  }
+}
+.advertisement__box.blue {
+  border: 2px solid rgb(11, 134, 246);
+}
+
+@media only screen and (min-width: 900px) {
+  .advertisement__box.blue {
+    border: none;
+  }
+}
+.advertisement__box.green {
+  border: 2px solid rgb(14, 116, 62);
+}
+
+@media only screen and (min-width: 900px) {
+  .advertisement__box.green {
+    border: none;
+  }
+}
+.advertisement__box.orange {
+  border: 2px solid rgb(254, 147, 93);
+}
+
+@media only screen and (min-width: 900px) {
+  .advertisement__box.orange {
+    border: none;
   }
 }
 .adverb {

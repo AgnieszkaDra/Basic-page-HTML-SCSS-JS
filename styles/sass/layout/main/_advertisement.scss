@@ -1,8 +1,8 @@
 @import '../../abstracts/';
 
 .advertisement {
-      
-        &__header {
+
+    &__header {
         @include flexAbsoluteCenter;
         flex-direction: column;
 
@@ -20,12 +20,12 @@
     }
 
     &__container {
-        padding: 100px;
+
         @include respond(tablet) {
+
             display: flex;
             justify-content: center;
             flex-direction: row;
-            padding: 0;
         }
     }
 
@@ -35,6 +35,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px 1fr 100px;
+
         @include respond(tablet) {
             margin: 5rem;
         }
@@ -50,15 +51,13 @@
             .advertisement__box-subitem.blue {
                 color: $color-dark-blue;
             }
-
         }
 
         &__header.orange {
             background-color: $color-very-light-orange;
             .advertisement__box-subitem.orange {
-                color: $color-dark-orange;
+                color: $color-dark-orange
             }
-
         }
 
         &__header.green {
@@ -82,6 +81,7 @@
         &__button {
             @include flexAbsoluteCenter;
             margin-top: 20px;
+
             button {
                 background-color: $color-white;
                 color: $color-light-blue;
@@ -97,4 +97,29 @@
             box-shadow: 0px 0px 5px 5px $color-light-grey;
         }
     }
+
+    &__box.blue {
+        border: 2px solid $color-dark-blue;
+
+        @include respond(tablet) {
+            border: none;
+        }
+    }
+
+    &__box.green {
+        border: 2px solid $color-dark-green;
+
+        @include respond(tablet) {
+            border: none;
+        }
+    }
+
+    &__box.orange {
+        border: 2px solid $color-dark-orange;
+
+        @include respond(tablet) {
+            border: none;
+        }
+    }
+
 }
