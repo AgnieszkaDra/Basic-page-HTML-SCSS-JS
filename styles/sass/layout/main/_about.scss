@@ -3,9 +3,9 @@
 .about {
     @include flexAbsoluteCenter;
     flex-direction: column;
-  
     @include respond(tablet) {
         flex-direction: row;
+        margin-bottom: 5rem;
       }
 
       &__text {

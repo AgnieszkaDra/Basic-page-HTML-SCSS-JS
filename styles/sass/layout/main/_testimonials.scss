@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond(tablet){
+        margin-bottom: 5rem;
+    }
 
     &__container {
         background-color: $color-light-blue;
@@ -18,11 +21,9 @@
         width: 100%;
         padding: 1rem;
         @include flexAbsoluteCenter;
-
         @include respond(tablet) {
             padding: 5rem
         }
-
         @include respond(desktop) {
             padding: 1rem
         }
@@ -37,8 +38,7 @@
     }
 
     &__headline {
-       
-       font-size: 1em;
+        font-size: 1em;
         line-height: 1.5em;
         margin-bottom: 10px;
         @include respond(tablet){
@@ -52,8 +52,7 @@
         margin-bottom: 10px;
         @include respond(tablet){
             font-size: initial;
-           
-            }
+           }
     }
 
     &__grades {

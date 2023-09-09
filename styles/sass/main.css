@@ -342,6 +342,11 @@ header .header__container .header__button {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 900px) {
+  .features {
+    margin-bottom: 5rem;
+  }
+}
 .features__headline {
   padding: 20px 0;
   font-size: 2em;
@@ -422,6 +427,7 @@ header .header__container .header__button {
 @media only screen and (min-width: 900px) {
   .about {
     flex-direction: row;
+    margin-bottom: 5rem;
   }
 }
 .about__text {
@@ -459,6 +465,11 @@ header .header__container .header__button {
   align-items: center;
 }
 
+@media only screen and (min-width: 900px) {
+  .testimonials {
+    margin-bottom: 5rem;
+  }
+}
 .testimonials__container {
   background-color: rgb(83, 172, 254);
   opacity: 0.7;
@@ -573,6 +584,11 @@ header .header__container .header__button {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 900px) {
+  .advertisement__header {
+    margin-bottom: 5rem;
+  }
+}
 .advertisement__header__headline {
   padding: 20px 0 20px;
   font-size: 2em;

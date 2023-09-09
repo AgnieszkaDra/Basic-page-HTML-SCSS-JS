@@ -4,88 +4,95 @@
     &__header {
         @include flexAbsoluteCenter;
         flex-direction: column;
+        @include respond(tablet){
+            margin-bottom: 5rem;
+        }
+
         &__headline {
             padding: 20px 0 20px;
             font-size: 2em;
             line-height: 1.5em;
         }
+
         &__description {
             width: 80%;
             font-weight: 100;
             padding-bottom: 20px;
         }
     }
+
     &__container {
-        @include respond(tablet) { 
-          display: flex;
-          justify-content: center;
-          flex-direction: row;
+        @include respond(tablet) {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
         }
     }
+
     &__box {
         list-style-type: none;
-       margin-bottom: 2rem;
+        margin-bottom: 2rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px 1fr 100px;
-       @include respond(tablet){
-        margin: 2rem;
-       }
-            &__header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+        @include respond(tablet) {
+            margin: 2rem;
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__header.blue {
+            background-color: $color-verylight-blue;
+            .advertisement__box-subitem.blue {
+                color: $color-dark-blue;
             }
 
-            &__header.blue {
-                background-color: $color-verylight-blue;
-                .advertisement__box-subitem.blue {
-                    color: $color-dark-blue;
-                }
+        }
 
+        &__header.orange {
+            background-color: $color-very-light-orange;
+            .advertisement__box-subitem.orange {
+                color: $color-dark-orange;
             }
 
-            &__header.orange {
-                background-color: $color-very-light-orange;
-                .advertisement__box-subitem.orange {
-                    color: $color-dark-orange;
-                }
+        }
+
+        &__header.green {
+            background-color: $color-light-green;
+            .advertisement__box-subitem.green {
+                color: $color-dark-green;
+            }
+        }
+
+        &__list {
+            padding: 10px;
+            @include flexAbsoluteCenter;
+            flex-direction: column;
+            color: $color-dark-grey;
+        }
+
+        &-subitem {
+            padding: 5px;
+        }
+
+        &__button {
+            @include flexAbsoluteCenter;
+            margin-top: 20px;
+            button {
+                background-color: $color-white;
+                color: $color-light-blue;
+                border: 1px solid $color-light-blue;
 
             }
-
-            &__header.green {
-                background-color: $color-light-green;
-                .advertisement__box-subitem.green {
-                    color: $color-dark-green;
-                }
-
-            }
-
-            &__list {
-                padding: 10px;
-                @include flexAbsoluteCenter;
-                flex-direction: column;
-                color: $color-dark-grey;
-            }
-            &-subitem {
-               padding: 5px;
-            }
-            &__button {
-          
-  @include flexAbsoluteCenter;
- 
-    
-    margin-top: 20px;
-    button {
-            background-color: $color-white;
-    color: $color-light-blue;
-    border: 1px solid $color-light-blue;
-
+        }
     }
-            }
-    }
+
     &__box:hover {
-        @include respond(tablet){
+        @include respond(tablet) {
             transform: scale(1.1);
             box-shadow: 0px 0px 5px 5px $color-light-grey;
         }

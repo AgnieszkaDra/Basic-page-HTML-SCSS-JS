@@ -3,6 +3,9 @@
 .features {
     display: flex;
     flex-direction: column;
+    @include respond(tablet) {
+        margin-bottom: 5rem;
+    }
 
     &__headline {
         padding: 20px 0;
