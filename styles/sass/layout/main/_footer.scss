@@ -1,11 +1,9 @@
 @import '../../abstracts/';
 
 .footer {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    background-color: $color-black;
+    @include flexAbsoluteCenter;
+    color: $color-light-grey;
     padding: 2rem;
     &__span {
         color: $color-dark-blue;
