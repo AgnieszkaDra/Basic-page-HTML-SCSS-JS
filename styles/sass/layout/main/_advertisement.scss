@@ -1,12 +1,10 @@
 @import '../../abstracts/';
 
 .advertisement {
-    &__header {
+      
+        &__header {
         @include flexAbsoluteCenter;
         flex-direction: column;
-        @include respond(tablet){
-            margin-bottom: 5rem;
-        }
 
         &__headline {
             padding: 20px 0 20px;
@@ -22,10 +20,12 @@
     }
 
     &__container {
+        padding: 100px;
         @include respond(tablet) {
             display: flex;
             justify-content: center;
             flex-direction: row;
+            padding: 0;
         }
     }
 
@@ -36,7 +36,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 60px 1fr 100px;
         @include respond(tablet) {
-            margin: 2rem;
+            margin: 5rem;
         }
 
         &__header {

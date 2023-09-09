@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
     @include respond(tablet){
         margin-bottom: 5rem;
     }
@@ -48,8 +49,9 @@
     }
 
     &__description {
-        font-size: 1em;
+        font-size: 0.8em;
         margin-bottom: 10px;
+        padding: 20px;
         @include respond(tablet){
             font-size: initial;
            }

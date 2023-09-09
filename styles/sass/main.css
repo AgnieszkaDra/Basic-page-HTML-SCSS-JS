@@ -340,6 +340,7 @@ header .header__container .header__button {
 .features {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -422,6 +423,7 @@ header .header__container .header__button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -463,6 +465,7 @@ header .header__container .header__button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -514,8 +517,9 @@ header .header__container .header__button {
   }
 }
 .testimonials__description {
-  font-size: 1em;
+  font-size: 0.8em;
   margin-bottom: 10px;
+  padding: 20px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -544,11 +548,12 @@ header .header__container .header__button {
   width: 100%;
   display: grid !important;
   grid-template-rows: 85% 15%;
-  height: 500px;
+  height: 400px;
 }
 
 @media only screen and (min-width: 900px) {
   .swiper {
+    height: 500px;
     width: 50%;
   }
 }
@@ -584,11 +589,6 @@ header .header__container .header__button {
   flex-direction: column;
 }
 
-@media only screen and (min-width: 900px) {
-  .advertisement__header {
-    margin-bottom: 5rem;
-  }
-}
 .advertisement__header__headline {
   padding: 20px 0 20px;
   font-size: 2em;
@@ -601,11 +601,16 @@ header .header__container .header__button {
   padding-bottom: 20px;
 }
 
+.advertisement__container {
+  padding: 100px;
+}
+
 @media only screen and (min-width: 900px) {
   .advertisement__container {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding: 0;
   }
 }
 .advertisement__box {
@@ -618,7 +623,7 @@ header .header__container .header__button {
 
 @media only screen and (min-width: 900px) {
   .advertisement__box {
-    margin: 2rem;
+    margin: 5rem;
   }
 }
 .advertisement__box__header {
@@ -796,6 +801,10 @@ header .header__container .header__button {
 .contacts__sublist {
   color: rgb(170, 174, 174);
   font-size: 0.8rem;
+}
+
+.contacts__item {
+  padding: 0.2em;
 }
 
 .footer {

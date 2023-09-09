@@ -3,6 +3,7 @@
 .features {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
     @include respond(tablet) {
         margin-bottom: 5rem;
     }

@@ -3,6 +3,7 @@
 .about {
     @include flexAbsoluteCenter;
     flex-direction: column;
+    margin-bottom: 2rem;
     @include respond(tablet) {
         flex-direction: row;
         margin-bottom: 5rem;
