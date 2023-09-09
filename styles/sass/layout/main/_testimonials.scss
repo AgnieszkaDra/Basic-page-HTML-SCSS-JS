@@ -17,9 +17,7 @@
         height: 100%;
         width: 100%;
         padding: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexAbsoluteCenter;
 
         @include respond(tablet) {
             padding: 5rem
@@ -39,14 +37,29 @@
     }
 
     &__headline {
-        padding: 20px 0 20px;
-        font-size: 2em;
+       
+       font-size: 1em;
         line-height: 1.5em;
+        margin-bottom: 10px;
+        @include respond(tablet){
+        font-size: 2em;
+        padding: 20px 0 20px;
+        }
+    }
+
+    &__description {
+        font-size: 1em;
+        margin-bottom: 10px;
+        @include respond(tablet){
+            font-size: initial;
+           
+            }
     }
 
     &__grades {
-        display: flex;
+        @include flexAbsoluteCenter;
         padding: 10px;
+        margin-bottom: 10px;
 
         .fa.fa-star {
             color: $color-yellow;
