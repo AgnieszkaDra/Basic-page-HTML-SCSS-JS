@@ -34,7 +34,7 @@ header {
     background-image: none;
   }
 }
-header .header__container {
+header .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,7 @@ header .header__container {
 }
 
 @media only screen and (min-width: 900px) {
-  header .header__container {
+  header .menu {
     width: 850px;
     height: 15vh;
     justify-content: space-between;
@@ -53,11 +53,11 @@ header .header__container {
   }
 }
 @media only screen and (min-width: 1200px) {
-  header .header__container {
+  header .menu {
     width: 1250px;
   }
 }
-header .header__logo {
+header .menu__logo {
   flex-basis: 30%;
   display: flex;
   justify-content: center;
@@ -65,13 +65,13 @@ header .header__logo {
 }
 
 @media only screen and (min-width: 900px) {
-  header .header__logo {
+  header .menu__logo {
     flex-basis: 25%;
     justify-content: flex-start;
     padding-left: 50px;
   }
 }
-header .header__navigation {
+header .menu__navigation {
   flex-basis: 30%;
   display: flex;
   justify-content: center;
@@ -79,23 +79,23 @@ header .header__navigation {
 }
 
 @media only screen and (min-width: 900px) {
-  header .header__navigation {
+  header .menu__navigation {
     flex-basis: 50%;
   }
 }
-header .header__button {
+header .menu__button {
   display: none;
 }
 
 @media only screen and (min-width: 900px) {
-  header .header__button {
+  header .menu__button {
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-basis: 25%;
   }
-  header .header__button button {
+  header .menu__button button {
     background-color: rgb(83, 172, 254);
   }
 }
