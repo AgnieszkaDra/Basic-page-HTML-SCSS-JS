@@ -74,7 +74,6 @@
     list-style: none;
     padding-left: 0;
     margin-left: 10px;
-
     @include respond(tablet) {
       margin-left: 0px;
       flex-direction: row;
@@ -92,7 +91,6 @@
     text-decoration: none;
     color: $color-white;
     padding: 10px;
-
     @include respond(max-tablet) {
       &:link,
       &:visited {
@@ -140,5 +138,4 @@
   &__checkbox:checked~&__item {
     padding: 10px 10px;
   }
-
 }

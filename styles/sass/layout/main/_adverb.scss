@@ -9,7 +9,7 @@
     color: $color-white;
     height: 50vh;
 
-    @include respond(tablet){
+    @include respond(tablet) {
         padding: 50px;
         height: 30vh;
         justify-content: space-between;
@@ -17,20 +17,20 @@
     }
 
     &__headline {
-    margin-bottom: 1rem;
-    color: $color-white;
-    font-size: 1.3em;
-    font-weight: 100;
+        margin-bottom: 1rem;
+        color: $color-white;
+        font-size: 1.3em;
+        font-weight: 100;
     }
 
     &__images {
         display: flex;
         align-self: start;
         flex-direction: column;
+
         @include respond(tablet) {
             flex-direction: row;
             align-self: center;
         }
     }
 }
-

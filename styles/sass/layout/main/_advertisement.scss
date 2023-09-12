@@ -22,7 +22,6 @@
     &__container {
 
         @include respond(tablet) {
-
             display: flex;
             justify-content: center;
             flex-direction: row;
@@ -48,6 +47,7 @@
 
         &__header.blue {
             background-color: $color-verylight-blue;
+
             .advertisement__box-subitem.blue {
                 color: $color-dark-blue;
             }
@@ -55,6 +55,7 @@
 
         &__header.orange {
             background-color: $color-very-light-orange;
+
             .advertisement__box-subitem.orange {
                 color: $color-dark-orange
             }
@@ -62,6 +63,7 @@
 
         &__header.green {
             background-color: $color-light-green;
+
             .advertisement__box-subitem.green {
                 color: $color-dark-green;
             }
