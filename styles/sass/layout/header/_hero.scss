@@ -2,17 +2,28 @@
 
 .hero {
  height: 1fr;
+ width: 100%;
+ background-image: url('../../../../images/banner/banner.png');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover; 
  display: grid;
  grid-template-columns: 20px 1fr 20px;
  grid-template-rows:  40% 60%;
  grid-template-areas: 
                     '. text .'
                     '. image .';
-@include respond(tablet) {
+
+    @include respond(tablet) {
+    width: 850px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr;
     grid-template-areas:' text image';
-}
+    }
+    
+    @include respond(desktop) {
+    width: 1150px;
+    }
 
     &__text {
         grid-area: text;

@@ -62,7 +62,11 @@
         padding: 10px;
         margin-bottom: 10px;
 
-        .fa.fa-star {
+        .stars-cont {
+            display: flex;
+        }
+
+        .fa-star {
             color: $color-yellow;
             display: block;
         }
